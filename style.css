@@ -1,10 +1,18 @@
 :root{
-    --color-primary:#ff914d;
+--color-primary:#ff914d;
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
 }
+header{
+height: 8rem;
+}
+/* ======== INICIO ========== */
+main{
+
+}
+
