@@ -8,9 +8,13 @@ header{
     height:6em;
     width: 100vw;
     background-color:#ffbc58;
+    
 }
 #img-header{
     height: 100%;
+    width:7%;
+    display: flex;
+    padding-top: 9px;
 }
 #img-header:hover{
     background-color:#ff914d;
@@ -38,6 +42,7 @@ nav{
     margin-right: 128px;
     color: rgb(70, 66, 66);
     font-size: 14pt;
+   
     
 }
 .inicio{
@@ -60,4 +65,49 @@ nav{
     100%{
         transform: translateX(0);
     }   
+}
+@media screen and (min-device-width: 375px) and (max-device-width:667px){
+
+    header{
+        /*#ff914d,#ffbc58)*/
+        height:6em;
+        width: 100vw;
+        background-color:#ffbc58;   
+    }
+    h1{
+        display: none;
+    }
+    #topo{  
+    margin:0;
+    height: 100%;
+    display: flex;
+}
+    nav{
+        margin-right: 0;
+        color: rgb(70, 66, 66);
+        font-size: 12pt;  
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+}
+.conta{
+    padding-right: 8px;
+}
+.inicio{
+    padding-left: 8px;
+    
+}
+
+    #img-header{
+        width:150px;
+
+}      
+    #img-header:hover{
+        display: none;
+    }
+    
+
 }
