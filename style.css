@@ -1,5 +1,5 @@
 :root{
---color-primary:#ff914d;
+--color-primary:#ff6b00;
 --color-background1:#f5f5f5;
 }
 
@@ -43,4 +43,9 @@ main{
 .container-img{
     display: grid;
     justify-content: center;
+}
+
+.content-pague {
+    color: white;
+    background-color: var(--color-primary);
 }
