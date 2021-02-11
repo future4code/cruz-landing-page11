@@ -1,8 +1,18 @@
+:root{
+--color-primary:#ff914d;
+}
+
 *{
     padding:0;
     margin: 0;
 
 }
+body{
+
+width: 100vw;
+height: 100vh;
+}
+
 header{
     /*#ff914d,#ffbc58)*/
     height:6em;
