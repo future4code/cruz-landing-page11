@@ -32,10 +32,7 @@ header {
 }
 #img-header:hover{
     background-color:#ff914d;
-    
-
 }
-
 header h1 {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -63,7 +60,7 @@ nav {
 .inicio {
   padding-right: 32px;
   animation: go-back 2s alternate;
-  color: #ff914d;
+  
 }
 .sobrenos {
   margin-right: 16px;
@@ -88,8 +85,7 @@ nav {
         /*#ff914d,#ffbc58)*/
         height:6em;
         width: 100vw;
-        background-color:#ffbc58;  
-         
+        background-color:#ffbc58;    
     }
     header h1{
         display: none;
@@ -108,13 +104,13 @@ nav {
         width: 100vw;
         display: flex;
         justify-content: space-between;
+        
     }
     .conta{
         padding-right: 8px;
     }
     .inicio{
         padding-left: 8px;
-
     }
 
     #img-header{
@@ -299,7 +295,7 @@ main {
     font-size: 22px;
   }
 
-}
+
 
 /* ======== FOOTER ========== */
 
