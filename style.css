@@ -22,17 +22,17 @@ height: 100vh;
 
 
 header{
-    /*#ff914d,#ffbc58)*/
+/*#ff914d,#ffbc58)*/
     height:6em;
     width: 100vw;
     background-color:#ffbc58;
-    
+
 }
 #img-header{
     height: 6em;
     width:7%;
     display: flex;
-    
+
 }
 #img-header:hover{
     background-color:#ff914d;
@@ -51,15 +51,18 @@ header h1{
     justify-content: space-evenly;
     align-items: center;
     margin-left: 8%;
-    
+
 }
 nav{
     text-align: center;
     display: flex;
     align-items: center;
     margin-right: 128px;
-    color: rgb(70, 66, 66);
     font-size: 14pt; 
+}
+.header-link{
+    text-decoration: none;
+    color: rgb(70, 66, 66);
 }
 .inicio{
     padding-right: 32px;
@@ -75,14 +78,14 @@ nav{
     animation:  go-back  2s alternate;
 
 }
- @keyframes go-back {
+@keyframes go-back {
     0% {
-       transform: translateX(100%);
+        transform: translateX(100%);
     }
     100%{
         transform: translateX(0);
     }   
-}
+    }
 @media screen and (min-device-width: 375px) and (max-device-width:667px){
 
     header{
@@ -95,10 +98,11 @@ nav{
         display: none;
     }
     #topo{  
-    margin:0;
-    height: 100%;
-    display: flex;
-}
+        margin:0;
+        height: 100%;
+        display: flex;
+    }
+
     nav{
         margin-right: 0;
         color: rgb(70, 66, 66);
@@ -107,21 +111,20 @@ nav{
         width: 100vw;
         display: flex;
         justify-content: space-between;
-}
-.conta{
-    padding-right: 8px;
-}
-.inicio{
-    padding-left: 8px;
-    
-}
+    }
+    .conta{
+        padding-right: 8px;
+    }
+    .inicio{
+        padding-left: 8px;
+
+    }
 
     #img-header{
         width:150px;
+    }    
 
-}    
-
-}
+    }
 
 /*=================== FIM DO HEADER=====================*/
 
