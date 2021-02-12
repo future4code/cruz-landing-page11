@@ -278,8 +278,6 @@ main {
     margin-top: 5px;
     font-size: 22px;
   }
-
-}
   .content-pag {
     padding-bottom: 50px;
   }
@@ -311,7 +309,7 @@ footer {
   display: grid;
   height: 30vh; /*100%; */
   grid-template-rows: 100%;
-  grid-template-columns: 15vw 60vw 25vw; /* 120px 60vw 20vw;*/
+  grid-template-columns: 15vw 50vw 20vw; /* 120px 60vw 20vw;*/
   margin-left: 24px;
   margin-right: 24px;
 }
