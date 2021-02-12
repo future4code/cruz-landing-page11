@@ -130,7 +130,7 @@ nav{
 
 /* 
 ======== MAIN ======== */
-@media screen and (min-width:1200px){
+
     main{
         font-family: 'Raleway', sans-serif;
     }
@@ -142,12 +142,30 @@ nav{
     }
     .content-bank {
         display:grid;
-        gap: 40px;
-        grid-template-columns: repeat(2,1fr );
-        margin: 0 50px;
         height: 100%;
     }
 
+   
+
+    .container-img img {
+        justify-content: center;
+    }
+
+    .content-pag {
+        color: white;
+        background-color: var(--color-primary);
+    }
+    
+
+   
+    
+@media screen and (min-width:1200px){
+    .content-bank {
+        gap: 40px;
+        margin: 0 50px;
+        grid-template-columns: repeat(2,1fr );  
+    }
+    
     .content-text {
         width: 500px;
         margin-top: 100px;
@@ -162,27 +180,18 @@ nav{
         margin-top: 10px;
         font-size: 42px;
     }
-
     .container-img{
         display: grid;
         justify-content: center;
         align-items: center;
     }
-
-    .container-img img {
-        justify-content: center;
-    }
-
-
     .content-pix{
-        margin: 100px 0;
+        margin: 100px 0 0 0;
     }
 
     .content-pix img{
         height: 350px;
     }
-
-
     .pix-text {
         width: 500px;
         font-size: 1.2rem;
@@ -201,9 +210,7 @@ nav{
 
     .content-pag {
         margin-top: 100px;
-        color: white;
         height: 500px;
-        background-color: var(--color-primary);
     }
     .pag-text {
         margin-top: 140px;
@@ -217,57 +224,78 @@ nav{
     .pag-text h1 {
          margin-top: 15px;
     }
+   
 }
 
 
 @media screen and (min-width:375px) and (max-width:668px){
-    main {
-        font-family: 'Raleway', sans-serif;
+    .content-bank {
+        margin: 0 15px;
+        grid-template-rows: repeat(2,1fr);
+          
     }
-    main img{
+    .container-img {
+        display: grid;
+        justify-content: center;
+    }
+   .container-img img{
         height: 200px;
     }
-    
-    .content-main{
-        height: 600px;
-        background-color: var(--color-background1);
-    }
-
-    .content-bank {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr );
-        margin: 0 50px;
-        height: 100%;
-    }
-    .content-bank img{
-       height: 200px;
-    }
-/* rever codigo daqui */
     .content-text {
-       
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width:350px;
+        display: grid;
         justify-content: center;
         text-align: center;
-        
+        margin-top: 60px;
         
     }
     .content-text h4{
-        font-weight: 600;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 16px;
     }
+
     .content-text h1{
-        font-weight: 600;
-        font-size: 24px;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .content-pix{
+        margin: 80px 0;
+    }
+    .pix-text{
+        margin-top: 30px; 
+    }
+
+    .pix-text h4{
+        font-weight: 500;
+    }
+    .pix-text h1{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .content-pag {
+        padding-bottom: 50px;
+    }
+    .pag-text {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        justify-content: right;
+        margin-top: 50px;
+        
+        
+    }
+    .pag-text h4{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .pag-text h1 {
+         margin-top: 5px;
+         font-size: 22px;
     }
 
 }
 
-.content-pague {
-    color: white;
-    background-color: var(--color-primary);
-}
+
 
 /* ======== FOOTER ========== */
 
