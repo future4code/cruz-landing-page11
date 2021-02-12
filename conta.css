@@ -26,13 +26,11 @@
         height:6em;
         width: 100vw;
         background-color:#ffbc58;
-    
     }
     #img-header{
         height: 6em;
         width: 150px;
         display: flex;
-    
     }
     #img-header:hover{
         background-color:#ff914d;
