@@ -140,33 +140,137 @@ nav{
 
 /* 
 ======== MAIN ======== */
-main{
-    font-family: 'Nunito', sans-serif;
-}
-.content-main{
-    background-color: var(--color-background1);
+@media screen and (min-width:1200px){
+    main{
+        font-family: 'Raleway', sans-serif;
+    }
+    .content-main{
+        background-color: var(--color-background1);
+    }
+    .bank {
+        font-family: 'Nunito', sans-serif;
+    }
+    .content-bank {
+        display:grid;
+        gap: 40px;
+        grid-template-columns: repeat(2,1fr );
+        margin: 0 50px;
+        height: 100%;
+    }
+
+    .content-text {
+        width: 500px;
+        margin-top: 100px;
+        
+    }
+    .content-text h4{
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .content-text h1{
+        margin-top: 10px;
+        font-size: 42px;
+    }
+
+    .container-img{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-img img {
+        justify-content: center;
+    }
+
+
+    .content-pix{
+        margin: 100px 0;
+    }
+
+    .content-pix img{
+        height: 350px;
+    }
+
+
+    .pix-text {
+        width: 500px;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        align-items: flex-end;
+    }
+    .pix-text h4{
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .pix-text h1 {
+         margin-top: 15px;
+    }
+
+    .content-pag {
+        margin-top: 100px;
+        color: white;
+        height: 500px;
+        background-color: var(--color-primary);
+    }
+    .pag-text {
+        margin-top: 140px;
+        font-size: 1.2rem;
+        
+    }
+    .pag-text h4{
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .pag-text h1 {
+         margin-top: 15px;
+    }
 }
 
-.content-bank {
-    display:grid;
-    grid-template-columns: repeat(2,1fr );
-    margin: 0 50px;
-}
 
-.content-text {
-    font-family: 'Raleway', sans-serif;
-    width: 500px;
-    font-size: 22px;
-    margin-top: 100px;
+@media screen and (min-width:375px) and (max-width:668px){
+    main {
+        font-family: 'Raleway', sans-serif;
+    }
+    main img{
+        height: 200px;
+    }
     
+    .content-main{
+        height: 600px;
+        background-color: var(--color-background1);
+    }
 
-}
-.content-text h4{
-   font-weight: 600;
-}
-.container-img{
-    display: grid;
-    justify-content: center;
+    .content-bank {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr );
+        margin: 0 50px;
+        height: 100%;
+    }
+    .content-bank img{
+       height: 200px;
+    }
+/* rever codigo daqui */
+    .content-text {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        
+    }
+    .content-text h4{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .content-text h1{
+        font-weight: 600;
+        font-size: 24px;
+    }
 
 }
 
@@ -233,3 +337,4 @@ footer {
 
 
 /*=================== FIM DO FOOTER =====================*/
+
