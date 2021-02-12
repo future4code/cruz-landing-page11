@@ -25,12 +25,7 @@
     /*#ff914d,#ffbc58)*/
         height:6em;
         width: 100vw;
-<<<<<<< HEAD
         background-color:#ffbc58;
-=======
-        background-color:#ff914d;
-    
->>>>>>> c8978cb8a5d69f9b424ff750b30d7413ed8ec38c
     }
     #img-header{
         height: 6em;
@@ -258,6 +253,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0 0 0 20px;
             height: 100vh;
             /* grid-template-rows: 40vh;
             grid-template-columns: 100vw; */
@@ -271,7 +267,7 @@
         }
 
         .container-img {
-           margin
+           
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
