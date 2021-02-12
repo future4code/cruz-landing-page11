@@ -22,17 +22,17 @@ height: 100vh;
 
 
 header{
-    /*#ff914d,#ffbc58)*/
+/*#ff914d,#ffbc58)*/
     height:6em;
     width: 100vw;
     background-color:#ffbc58;
-    
+
 }
 #img-header{
     height: 6em;
     width:7%;
     display: flex;
-    
+
 }
 #img-header:hover{
     background-color:#ff914d;
@@ -51,15 +51,18 @@ header h1{
     justify-content: space-evenly;
     align-items: center;
     margin-left: 8%;
-    
+
 }
 nav{
     text-align: center;
     display: flex;
     align-items: center;
     margin-right: 128px;
-    color: rgb(70, 66, 66);
     font-size: 14pt; 
+}
+.header-link{
+    text-decoration: none;
+    color: rgb(70, 66, 66);
 }
 .inicio{
     padding-right: 32px;
@@ -75,14 +78,14 @@ nav{
     animation:  go-back  2s alternate;
 
 }
- @keyframes go-back {
+@keyframes go-back {
     0% {
-       transform: translateX(100%);
+        transform: translateX(100%);
     }
     100%{
         transform: translateX(0);
     }   
-}
+    }
 @media screen and (min-device-width: 375px) and (max-device-width:667px){
 
     header{
@@ -95,10 +98,11 @@ nav{
         display: none;
     }
     #topo{  
-    margin:0;
-    height: 100%;
-    display: flex;
-}
+        margin:0;
+        height: 100%;
+        display: flex;
+    }
+
     nav{
         margin-right: 0;
         color: rgb(70, 66, 66);
@@ -107,21 +111,20 @@ nav{
         width: 100vw;
         display: flex;
         justify-content: space-between;
-}
-.conta{
-    padding-right: 8px;
-}
-.inicio{
-    padding-left: 8px;
-    
-}
+    }
+    .conta{
+        padding-right: 8px;
+    }
+    .inicio{
+        padding-left: 8px;
+
+    }
 
     #img-header{
         width:150px;
+    }    
 
-}    
-
-}
+    }
 
 /*=================== FIM DO HEADER=====================*/
 
@@ -305,21 +308,23 @@ footer {
 
 .footer-container{
     display: grid;
-    height:100%;
+    height: 30vh; /*100%; */
     grid-template-rows: 100%; 
-    grid-template-columns: 120px 2fr 1fr;
-    width: 100vw;
+    grid-template-columns: 15vw 60vw 25vw; /* 120px 60vw 20vw;*/    
     margin-left: 24px;
     margin-right: 24px;
 }
 
 .logo-footer {
     grid-column: 1;
+    display: flex;
+    align-items: center;
 }
 
 #img-footer {
     height: 100px;
     width: 100px;
+    
 
 }
 
@@ -331,7 +336,8 @@ footer {
     grid-column:2;
     grid-row: 1;
     display: flex;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    align-items: center;
 
 }
 
@@ -339,22 +345,62 @@ footer {
     grid-column:2;
     grid-row: 1;
     display: flex;
-    margin-top: 60px;
-    
+    margin-top: 30px;
+    align-items: center;
 } 
 
 .redes-sociais-container{
     grid-column:3;
     display: flex;
     align-items: center;
-    
-    /* justify-content: space-around; */
+    margin-top: 15px;
 }
 
+@media screen and (min-device-width: 375px) and (max-device-width:667px){
+    .footer-container{
+        display: grid;        
+        height: 25vh;
+        grid-template-rows:  5vh 5vh 5vh;
+        grid-template-columns: 100vw;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 
-    
+    #img-footer {
+        display: none;    
+    }
 
+    .logo-footer {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
 
+    #nome-completo {
+        grid-row: 2;
+        grid-column: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    #endereço {
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    .redes-sociais-container{
+        grid-row: 4;
+        grid-column: 1;
+        margin-top: 0;
+    }
+
+    #p-footer {
+        font-size: 14px;
+    }
+}
 
 /*=================== FIM DO FOOTER =====================*/
-
