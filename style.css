@@ -5,8 +5,7 @@
 
 *{
     padding:0;
-    margin: 0;
-
+    margin:0;
 }
 body{
 
@@ -21,11 +20,7 @@ height: 100vh;
 
 /* ======== HEADER========== */
 
-*{
-    padding:0;
-    margin: 0;
 
-}
 header{
     /*#ff914d,#ffbc58)*/
     height:6em;
@@ -34,14 +29,14 @@ header{
     
 }
 #img-header{
-    height: 100%;
+    height: 6em;
     width:7%;
     display: flex;
     
 }
 #img-header:hover{
     background-color:#ff914d;
-    height: 96px;
+    height:6em;
 }
 
 header h1{
@@ -69,6 +64,7 @@ nav{
 .inicio{
     padding-right: 32px;
     animation:  go-back  2s alternate;
+    color:#ff914d ;
 }
 .sobrenos{
     margin-right: 16px;
@@ -95,7 +91,7 @@ nav{
         width: 100vw;
         background-color:#ffbc58;   
     }
-    h1{
+    header h1{
         display: none;
     }
     #topo{  
@@ -111,8 +107,6 @@ nav{
         width: 100vw;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-
 }
 .conta{
     padding-right: 8px;
@@ -125,11 +119,7 @@ nav{
     #img-header{
         width:150px;
 
-}      
-    #img-header:hover{
-        display: none;
-    }
-    
+}    
 
 }
 
