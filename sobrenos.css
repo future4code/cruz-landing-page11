@@ -30,7 +30,7 @@
     }
     #img-header{
         height: 6em;
-        width:7%;
+        width: 150px;
         display: flex;
     
     }
@@ -136,142 +136,67 @@
     @media screen and (min-width:1200px){
         main{
             font-family: 'Raleway', sans-serif;
+            width: 100vw;
+            padding-top: 64px;
         }
-        .content-main{
-            background-color: var(--color-background1);
+        main h2{
+            text-align: center;
+            padding-top: 64px;
+            font-size: 3em;
         }
-        .bank {
-            font-family: 'Nunito', sans-serif;
-        }
-        .content-bank {
-            display:grid;
-            gap: 40px;
-            grid-template-columns: repeat(2,1fr );
-            margin: 0 50px;
-            height: 100%;
-        }
-    
-        .content-text {
-            width: 500px;
-            margin-top: 100px;
-            
-        }
-        .content-text h4{
-            font-weight: 500;
-            font-size: 24px;
-        }
-    
-        .content-text h1{
-            margin-top: 10px;
-            font-size: 42px;
-        }
-    
-        .container-img{
-            display: grid;
-            justify-content: center;
+        .flex-containner{
+            display: flex;
+            flex-direction: row;  
+            text-align: center; 
             align-items: center;
         }
-    
-        .container-img img {
-            justify-content: center;
+        .main-containner{
+            
+            border:solid #ffbc58;
+            
+           
         }
-    
-    
-        .content-pix{
-            margin: 100px 0;
-        }
-    
-        .content-pix img{
-            height: 350px;
-        }
-    
-    
-        .pix-text {
-            width: 500px;
-            font-size: 1.2rem;
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-            align-items: flex-end;
-        }
-        .pix-text h4{
-            font-weight: 500;
-            font-size: 24px;
-        }
-        .pix-text h1 {
-             margin-top: 15px;
-        }
-    
-        .content-pag {
-            margin-top: 100px;
-            color: white;
-            height: 500px;
-            background-color: var(--color-primary);
-        }
-        .pag-text {
-            margin-top: 140px;
-            font-size: 1.2rem;
+        main p{
+            line-height: 32px;
+            padding:2em;
+           font-size: 24px;
             
         }
-        .pag-text h4{
-            font-weight: 500;
-            font-size: 24px;
-        }
-        .pag-text h1 {
-             margin-top: 15px;
-        }
+        .container-img{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 32px;
+            margin-right: 32px;
+            }
     }
-    
     
     @media screen and (min-width:375px) and (max-width:668px){
         main {
             font-family: 'Raleway', sans-serif;
+            padding-top: 24px;
         }
         main img{
-            height: 200px;
+            width: 100%;
+            margin-top: 32px;
+            
         }
-        
-        .content-main{
-            height: 600px;
-            background-color: var(--color-background1);
-        }
-    
-        .content-bank {
-            display: grid;
-            grid-template-rows: repeat(2, 1fr );
-            margin: 0 50px;
-            height: 100%;
-        }
-        .content-bank img{
-           height: 200px;
-        }
-    /* rever codigo daqui */
-        .content-text {
-           
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        main h2{
             text-align: center;
-            
-            
+            padding-top: 8px;
         }
-        .content-text h4{
-            font-weight: 600;
-            font-size: 24px;
-        }
-        .content-text h1{
-            font-weight: 600;
-            font-size: 24px;
-        }
-    
+        main p{
+            line-height: 20px;
+            padding: 8px;
+            font-size: 16px;
+            text-align: center;
+           
+           color:rgb(3, 3, 3);    
     }
+   .main-containner{
+    border-top: 1px solid #ffbc58;
     
-    .content-pague {
-        color: white;
-        background-color: var(--color-primary);
-    }
-    
+   }
+}
     /* ======== FOOTER ========== */
 
 footer {
@@ -370,9 +295,11 @@ footer {
         margin-top: 0;
     }
 
-    #p-footer {
-        font-size: 14px;
-    }
-}
+    
+    
+        
+    
+    
+    
+    /*=================== FIM DO FOOTER =====================*/
 
-/*=================== FIM DO FOOTER =====================*/

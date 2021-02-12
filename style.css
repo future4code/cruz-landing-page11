@@ -23,14 +23,17 @@ header {
   width: 100vw;
   background-color: #ffbc58;
 }
-#img-header {
-  height: 6em;
-  width: 7%;
-  display: flex;
+
+#img-header{
+    height: 6em;
+    width: 150px;
+    display: flex;
+
 }
-#img-header:hover {
-  background-color: #ff914d;
-  height: 6em;
+#img-header:hover{
+    background-color:#ff914d;
+    
+
 }
 
 header h1 {
@@ -71,50 +74,57 @@ nav {
   animation: go-back 2s alternate;
 }
 @keyframes go-back {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@media screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  header {
-    /*#ff914d,#ffbc58)*/
-    height: 6em;
-    width: 100vw;
-    background-color: #ffbc58;
-  }
-  header h1 {
-    display: none;
-  }
-  #topo {
-    margin: 0;
-    height: 100%;
-    display: flex;
-  }
 
-  nav {
-    margin-right: 0;
-    color: rgb(70, 66, 66);
-    font-size: 12pt;
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-  }
-  .conta {
-    padding-right: 8px;
-  }
-  .inicio {
-    padding-left: 8px;
-  }
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }   
+    }
+@media screen and (min-device-width: 375px) and (max-device-width:667px){
 
-  #img-header {
-    width: 150px;
-  }
-}
+    header{
+        /*#ff914d,#ffbc58)*/
+        height:6em;
+        width: 100vw;
+        background-color:#ffbc58;  
+         
+    }
+    header h1{
+        display: none;
+    }
+    #topo{  
+        margin:0;
+        height: 100%;
+        display: flex;
+    }
 
+    nav{
+        margin-right: 0;
+        color: rgb(70, 66, 66);
+        font-size: 12pt;  
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .conta{
+        padding-right: 8px;
+    }
+    .inicio{
+        padding-left: 8px;
+
+    }
+
+    #img-header{
+        width:150px;
+       
+    }    
+
+    }
+
+ 
 /*=================== FIM DO HEADER=====================*/
 
 /* 
@@ -137,6 +147,7 @@ main {
 .container-img img {
   justify-content: center;
 }
+
 
 .content-pag {
   color: white;
@@ -267,6 +278,27 @@ main {
     margin-top: 5px;
     font-size: 22px;
   }
+
+}
+  .content-pag {
+    padding-bottom: 50px;
+  }
+  .pag-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: right;
+    margin-top: 50px;
+  }
+  .pag-text h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .pag-text h1 {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+
 }
 
 /* ======== FOOTER ========== */
