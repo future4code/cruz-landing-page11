@@ -30,13 +30,13 @@ header{
 }
 #img-header{
     height: 6em;
-    width:7%;
+    width: 150px;
     display: flex;
 
 }
 #img-header:hover{
     background-color:#ff914d;
-    height:6em;
+    
 }
 
 header h1{
@@ -92,7 +92,8 @@ nav{
         /*#ff914d,#ffbc58)*/
         height:6em;
         width: 100vw;
-        background-color:#ffbc58;   
+        background-color:#ffbc58;  
+         
     }
     header h1{
         display: none;
@@ -122,6 +123,7 @@ nav{
 
     #img-header{
         width:150px;
+       
     }    
 
     }
@@ -234,6 +236,7 @@ nav{
     .content-main{
         height: 600px;
         background-color: var(--color-background1);
+        
     }
 
     .content-bank {
@@ -241,6 +244,7 @@ nav{
         grid-template-rows: repeat(2, 1fr );
         margin: 0 50px;
         height: 100%;
+        
     }
     .content-bank img{
        height: 200px;
