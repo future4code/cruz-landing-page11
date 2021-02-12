@@ -198,58 +198,103 @@
    }
 }
     /* ======== FOOTER ========== */
+
+footer {
+    background-color: #f5f5f5
+}
+
+.footer-container{
+    display: grid;
+    height: 30vh; /*100%; */
+    grid-template-rows: 100%; 
+    grid-template-columns: 15vw 60vw 25vw; /* 120px 60vw 20vw;*/    
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.logo-footer {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+}
+
+#img-footer {
+    height: 100px;
+    width: 100px;
     
-    footer {
-        background-color: #f5f5f5
-    }
-    
+
+}
+
+.infos {
+    grid-column:2;
+}
+
+#nome-completo {
+    grid-column:2;
+    grid-row: 1;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+
+#endereço {
+    grid-column:2;
+    grid-row: 1;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+} 
+
+.redes-sociais-container{
+    grid-column:3;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width:667px){
     .footer-container{
-        display: grid;
-        height:100%;
-        grid-template-rows: 100%; 
-        grid-template-columns: 120px 2fr 1fr;
-        width: 100vw;
+        display: grid;        
+        height: 25vh;
+        grid-template-rows:  5vh 5vh 5vh;
+        grid-template-columns: 100vw;
         margin-left: 24px;
         margin-right: 24px;
     }
-    
-    .logo-footer {
-        grid-column: 1;
-    }
-    
+
     #img-footer {
-        height: 100px;
-        width: 100px;
-    
+        display: none;    
     }
-    
-    .infos {
-        grid-column:2;
+
+    .logo-footer {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        justify-content: flex-start;
     }
-    
+
     #nome-completo {
-        grid-column:2;
-        grid-row: 1;
+        grid-row: 2;
+        grid-column: 1;
         display: flex;
-        margin-top: 30px;
-    
+        justify-content: flex-start;
+        margin-bottom: 0;
     }
-    
+
     #endereço {
-        grid-column:2;
-        grid-row: 1;
-        display: flex;
-        margin-top: 60px;
-        
-    } 
-    
-    .redes-sociais-container{
-        grid-column:3;
-        display: flex;
-        align-items: center;
-        
-        /* justify-content: space-around; */
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 0;
+        align-items: flex-start;
     }
+
+    .redes-sociais-container{
+        grid-row: 4;
+        grid-column: 1;
+        margin-top: 0;
+    }
+
     
     
         
@@ -257,3 +302,4 @@
     
     
     /*=================== FIM DO FOOTER =====================*/
+
