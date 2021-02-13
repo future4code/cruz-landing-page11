@@ -60,6 +60,10 @@
         margin-right: 128px;
         font-size: 14pt; 
     }
+    nav a:hover {
+        transition: 300ms;
+        color: #f5f5f5;
+      }
     .header-link{
         text-decoration: none;
         color: rgb(70, 66, 66);
@@ -297,9 +301,5 @@ footer {
 
     
     
-        
-    
-    
     
     /*=================== FIM DO FOOTER =====================*/
-
