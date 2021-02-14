@@ -25,12 +25,14 @@
     /*#ff914d,#ffbc58)*/
         height:6em;
         width: 100vw;
-        background-color:#ffbc58;
+        background-color:#ff914d;
+    
     }
     #img-header{
         height: 6em;
         width: 150px;
         display: flex;
+    
     }
     #img-header:hover{
         background-color:#ff914d;
@@ -58,10 +60,6 @@
         margin-right: 128px;
         font-size: 14pt; 
     }
-    nav a:hover {
-        transition: 300ms;
-        color: #f5f5f5;
-      }
     .header-link{
         text-decoration: none;
         color: rgb(70, 66, 66);
@@ -253,7 +251,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 0 0 20px;
             height: 100vh;
             /* grid-template-rows: 40vh;
             grid-template-columns: 100vw; */
@@ -267,7 +264,7 @@
         }
 
         .container-img {
-           
+           margin
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
