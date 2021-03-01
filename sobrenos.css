@@ -1,0 +1,305 @@
+:root{
+    --color-primary:#ff6b00;
+    --color-background1:#f5f5f5;
+    }
+    
+    *{
+        padding:0;
+        margin:0;
+    }
+    body{
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    }
+    
+    
+    
+    /* ======== HEADER========== */
+    
+    
+    header{
+    /*#ff914d,#ffbc58)*/
+        height:6em;
+        width: 100vw;
+        background-color:#ffbc58;
+    
+    }
+    #img-header{
+        height: 6em;
+        width: 150px;
+        display: flex;
+    
+    }
+    #img-header:hover{
+        background-color:#ff914d;
+        height:6em;
+    }
+    
+    header h1{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-self: center;
+        color: rgb(70, 66, 66);
+        font-size: 24px;
+    }
+    #topo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 8%;
+    
+    }
+    nav{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-right: 128px;
+        font-size: 14pt; 
+    }
+    nav a:hover {
+        transition: 300ms;
+        color: #f5f5f5;
+      }
+    .header-link{
+        text-decoration: none;
+        color: rgb(70, 66, 66);
+    }
+    .inicio{
+        padding-right: 32px;
+        animation:  go-back  2s alternate;
+        color:#ff914d ;
+    }
+    .sobrenos{
+        margin-right: 16px;
+        animation:  go-back  2s alternate;
+    }
+    .conta{
+        margin-left: 16px;
+        animation:  go-back  2s alternate;
+    
+    }
+    @keyframes go-back {
+        0% {
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }   
+        }
+    @media screen and (min-device-width: 375px) and (max-device-width:667px){
+    
+        header{
+            /*#ff914d,#ffbc58)*/
+            height:6em;
+            width: 100vw;
+            background-color:#ffbc58;   
+        }
+        header h1{
+            display: none;
+        }
+        #topo{  
+            margin:0;
+            height: 100%;
+            display: flex;
+        }
+    
+        nav{
+            margin-right: 0;
+            color: rgb(70, 66, 66);
+            font-size: 12pt;  
+            height: 100%;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        .conta{
+            padding-right: 8px;
+        }
+        .inicio{
+            padding-left: 8px;
+    
+        }
+    
+        #img-header{
+            width:150px;
+        }    
+    
+        }
+    
+    /*=================== FIM DO HEADER=====================*/
+    
+    
+    
+    
+    /* 
+    ======== MAIN ======== */
+    @media screen and (min-width:1200px){
+        main{
+            font-family: 'Raleway', sans-serif;
+            width: 100vw;
+            padding-top: 64px;
+        }
+        main h2{
+            text-align: center;
+            padding-top: 64px;
+            font-size: 3em;
+        }
+        .flex-containner{
+            display: flex;
+            flex-direction: row;  
+            text-align: center; 
+            align-items: center;
+        }
+        .main-containner{
+            
+            border:solid #ffbc58;
+            
+           
+        }
+        main p{
+            line-height: 32px;
+            padding:2em;
+           font-size: 24px;
+            
+        }
+        .container-img{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 32px;
+            margin-right: 32px;
+            }
+    }
+    
+    @media screen and (min-width:375px) and (max-width:668px){
+        main {
+            font-family: 'Raleway', sans-serif;
+            padding-top: 24px;
+        }
+        main img{
+            width: 100%;
+            margin-top: 32px;
+            
+        }
+        main h2{
+            text-align: center;
+            padding-top: 8px;
+        }
+        main p{
+            line-height: 20px;
+            padding: 8px;
+            font-size: 16px;
+            text-align: center;
+           
+           color:rgb(3, 3, 3);    
+    }
+   .main-containner{
+    border-top: 1px solid #ffbc58;
+    
+   }
+}
+    /* ======== FOOTER ========== */
+
+footer {
+    background-color: #f5f5f5
+}
+
+.footer-container{
+    display: grid;
+    height: 30vh; /*100%; */
+    grid-template-rows: 100%; 
+    grid-template-columns: 15vw 50vw 20vw; /* 120px 60vw 20vw;*/    
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.logo-footer {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+}
+
+#img-footer {
+    height: 100px;
+    width: 100px;
+    
+
+}
+
+.infos {
+    grid-column:2;
+}
+
+#nome-completo {
+    grid-column:2;
+    grid-row: 1;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+
+#endereço {
+    grid-column:2;
+    grid-row: 1;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+} 
+
+.redes-sociais-container{
+    grid-column:3;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width:667px){
+    .footer-container{
+        display: grid;        
+        height: 25vh;
+        grid-template-rows:  5vh 5vh 5vh;
+        grid-template-columns: 100vw;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    #img-footer {
+        display: none;    
+    }
+
+    .logo-footer {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #nome-completo {
+        grid-row: 2;
+        grid-column: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    #endereço {
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    .redes-sociais-container{
+        grid-row: 4;
+        grid-column: 1;
+        margin-top: 0;
+    }
+
+    
+    
+    
+    /*=================== FIM DO FOOTER =====================*/
